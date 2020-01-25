@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var textLabel: UILabel! {
+        didSet {
+            textLabel.text = "Hello world"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
